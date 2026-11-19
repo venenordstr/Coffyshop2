@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Ember &amp; Oak: small-batch coffee roasters. Explore our menu of eight signature drinks.">
+<meta name="theme-color" content="#0d0705">
+<title>Ember &amp; Oak — Coffee Roasters</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;1,9..144,300&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<canvas id="bg"></canvas><div class="veil"></div><div class="grain"></div><div id="bar"></div>
+
+<nav id="nav">
+  <a class="logo" href="#top">Ember <i>&amp;</i> Oak</a>
+  <ul><li><a href="#story">Story</a></li><li><a href="#menu">Menu</a></li><li><a href="#craft">Craft</a></li><li><a href="#visit">Visit</a></li></ul>
+  <a class="btn" href="#menu" style="padding:9px 20px">Order ahead</a>
+</nav>
+
+<header class="hero" id="top">
+  <div id="heroin">
+    <div class="eyebrow">Small-batch roasters · Est. 2014</div>
+    <h1><span class="w"><span style="animation-delay:.1s">Slow</span></span> <span class="w"><span style="animation-delay:.25s">coffee,</span></span><br><span class="w"><span style="animation-delay:.4s"><em>poured</em></span></span> <span class="w"><span style="animation-delay:.55s">with soul.</span></span></h1>
+    <p class="lead rv in">Single-origin beans, roasted every morning over oak embers and served in a room that smells like heaven.</p>
+    <div class="cta rv in"><a class="btn" href="#menu">Explore the menu</a><a class="btn g" href="#visit">Find us</a></div>
+  </div>
+  <div class="scroll"></div>
+</header>
+
+<div class="marq"><div id="mq"></div></div>
+
+<section id="story">
+  <div class="about">
+    <div class="rv l">
+      <div class="eyebrow">Our story</div>
+      <h2>Roasted at dawn, <em>shared</em> by noon.</h2>
+      <p>We started with a secondhand roaster and a stubborn idea: coffee should taste like the place it grew, not like the char it was burned with.</p>
+      <p>Today we work directly with eleven farms across Ethiopia, Colombia and Guatemala, and roast in small batches right behind the bar.</p>
+    </div>
+    <div class="stats rv r">
+      <div class="glass stat"><b data-c="11">0</b><span>Partner farms</span></div>
+      <div class="glass stat"><b data-c="48">0</b><span>Hours max. bean age</span></div>
+      <div class="glass stat"><b data-c="8">0</b><span>Signature drinks</span></div>
+      <div class="glass stat"><b data-c="100">0</b><span>% compostable cups</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="menu">
+  <div class="head rv"><div class="eyebrow">The menu</div><h2>Eight ways to <em>fall in love</em></h2><p>Every drink starts with a double shot of our house roast unless noted.</p>
+    <div class="chips"><button class="chip on" data-f="all">All</button><button class="chip" data-f="hot">Hot</button><button class="chip" data-f="iced">Iced</button></div></div>
+  <div class="menu" id="grid"></div>
+</section>
+
+<section id="craft">
+  <div class="head rv"><div class="eyebrow">The craft</div><h2>From bean to <em>cup</em></h2></div>
+  <div class="steps" id="steps"><div class="fill"></div>
+    <div class="glass step rv" data-n="1"><h3>Sourced with care</h3><p>We pay farmers well above fair-trade and visit every harvest.</p></div>
+    <div class="glass step rv" data-n="2"><h3>Roasted over oak</h3><p>Small 12 kg batches, profiled by hand and cupped daily.</p></div>
+    <div class="glass step rv" data-n="3"><h3>Dialed in daily</h3><p>Our baristas re-tune grind and extraction every morning for the weather.</p></div>
+    <div class="glass step rv" data-n="4"><h3>Poured with soul</h3><p>Texture-perfect milk, steady hands, and a smile that’s included in the price.</p></div>
+  </div>
+</section>
+
+<section id="visit">
+  <div class="visit">
+    <div class="glass rv l"><div class="eyebrow">Visit us</div><h2>Come say <em>hello</em></h2>
+      <address>Kerkstraat 24<br>2220 Heist-op-den-Berg</address>
+      <a class="btn" href="#visit">Get directions</a></div>
+    <div class="glass rv r"><div class="eyebrow">Opening hours</div>
+      <ul class="hrs"><li>Mon – Fri <b>7:00 – 18:00</b></li><li>Saturday <b>8:00 – 19:00</b></li><li>Sunday <b>9:00 – 16:00</b></li></ul>
+      <form onsubmit="event.preventDefault();this.querySelector('button').textContent='Welcome ☕'"><input type="email" placeholder="Your email for the monthly roast"><button class="btn">Join</button></form></div>
+  </div>
+</section>
+<footer>© 2026 Ember &amp; Oak Coffee Roasters · Brewed with love</footer>
+
+<script src="js/main.js"></script>
+<script src="js/background.js"></script>
+</body>
+</html>
